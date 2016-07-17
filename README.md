@@ -1,7 +1,7 @@
 # newsletter-generator
 ##HTML 
 [x] Créer la structure de base
-[] Ajouter les champs
+[ ] Ajouter les champs
 [] Ajouter fonctionnalités de suivi google analytics
 [] Rendre le tout un peu plus sexy
 [] L'UTF-8 C'est le bien
@@ -9,6 +9,7 @@
 
 ## PHP
 [] Récupération des données
+[] Traiter les images
 [] Traitement spécifique pour le bouton "Ajouter une ligne
 
 
