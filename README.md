@@ -1,19 +1,27 @@
 # newsletter-generator
 ##HTML 
 - [x] Créer la structure de base
-- [ ] Ajouter les champs
-- [ ] Ajouter fonctionnalités de suivi google analytics
-- [ ] Rendre le tout un peu plus sexy
-- [ ] L'UTF-8 C'est le bien
+- [ ] Faire une version responsive de la NL
+- [ ] **Faire des label activant le champ**
+- [x] Ajouter les champs
+- [ ] **Ajouter fonctionnalités de suivi google analytics**
+- [ ] **Rendre le tout un peu plus sexy**
+- [x] L'UTF-8 C'est le bien
+- [ ] **Ajout d'un champ police**
 
 
 ## PHP
-- [ ] Récupération des données
-- [ ] Traitement spécifique pour le bouton "Ajouter une ligne
+- [x] Récupération des données
+- [ ] Permettre l'upload d'image
+- [ ] **Traitement spécifique pour le bouton "Ajouter une ligne"**
+- [ ] **Des fonctions pour récuperer les données du formulaires**
+- [ ] **Traitement du champ police**
+
 
 
 ## Javascript
-- [ ] Faire un bouton "ajouter une ligne"
+- [ ] **Faire un bouton "ajouter une ligne"**
+- [ ] **Ajouter les utm de tracking aux url**
 
 
 ##A prevoir
