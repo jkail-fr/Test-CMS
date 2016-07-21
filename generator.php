@@ -61,7 +61,7 @@ $campaign_name = $_POST['campaign-name'];
         <?php
         }
         ?>
-        ?>
+
         <td>
             <p>n°<?php echo $numero_nl; ?><br><?php echo $date_nl; ?></p>
         </td>
