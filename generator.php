@@ -19,13 +19,17 @@ $date_nl = $_POST['date-nl'];
 
 $color_container = $_POST['color-container'];
 $bloc_number = $_POST['bloc-number'];
+$row_number = $_POST['row-number'];
 
 
 /**Footer**/
 $url_unsuscribe = $_POST['url-unsuscribe'];
 
 /**Tracking**/
-$campaign_name = $_POST['campaign-name'];
+$source_tracking = $_POST['source-tracking'];
+$medium_tracking = $_POST['medium-tracking'];
+$campaign_name = $_POST['campaign-tracking'];
+$campaign_name = $_POST['content_tracking'];
 
 ?>
 
@@ -38,10 +42,10 @@ $campaign_name = $_POST['campaign-name'];
     <title>Generation de newsletter</title>
 </head>
 
-<body style="background:<?php echo $color_body; ?>;">
+<body style="background:<?php echo $color_body; ?>;/*font-family: <?php echo $police; ?>*/">
 
 <!--Affichage du lien URL -->
-  <table  width="800px" style="background:<?php echo $color_container; ?>; margin:0 auto;" >
+  <table  width="800px" style="/*background:<?php echo $color_container; ?>;*/ margin:0 auto; text-align:center;" >
       <tr>
           <td>
               <p>Pour consulter la version en ligne <a href="<?php echo $url_newsletter; ?>"> cliquer ici</a></p>
@@ -67,7 +71,7 @@ $campaign_name = $_POST['campaign-name'];
         }
         ?>
 
-        <td>
+        <td align="right">
             <p>n°<?php echo $numero_nl; ?><br><?php echo $date_nl; ?></p>
         </td>
     </tr>
@@ -77,24 +81,33 @@ $campaign_name = $_POST['campaign-name'];
 
 <!--A jumeler avec le js ajouter un ligne pour répéter ce code autant de fois que nécessaire-->
 <table width="800px" style="background:<?php echo $color_container; ?>;  margin:0 auto;" >
+    <?php
+    $ii = 0;
+    while ($ii < $row_number) {
+        $ii++;
+    ?>
+
     <tr>
         <?php
         $i = 0;
         while ($i != $bloc_number )
         {
             $numbloc = $i+1;
-            echo '<td> Bloc n°'.$numbloc.'</td>';
+            echo '<td> <h3>Bloc n°'.$numbloc.'</h3>Cognitis enim pilatorum caesorumque funeribus nemo deinde ad has stationes appulit navem, sed ut Scironis praerupta letalia declinantes litoribus Cypriis contigui navigabant, quae Isauriae scopulis sunt controversa.</td>';
             $i++;
         }
-
         ?>
+
     </tr>
+    <?php
+    ; }
+    ?>
 </table>
 
 <!-- fin du contenu -->
 <!-- Affichage du footer-->
 
-<table  width="800px" style="background:<?php echo $color_container; ?>;  margin:0 auto;" >
+<table  width="800px" style="/*background:<?php echo $color_container; ?>;*/  margin:0 auto; text-align:center;" >
     <tr>
         <td><p>Pour vous désinscrire <a href="<?php echo $url_unsuscribe; ?>">cliquer ici</a></p></td>
     </tr>
