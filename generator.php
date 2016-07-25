@@ -2,6 +2,11 @@
 
 /**** Data retrieval ... ca peut servir***/
 
+/**General**/
+$color_body = $_POST['color-body'];
+$police = $_POST['police'];
+    /**Traitement de la police**/
+
 
 
 /**Header**/
@@ -11,7 +16,7 @@ $date_nl = $_POST['date-nl'];
 
 
 /**Contenu**/
-$color_body = $_POST['color-body'];
+
 $color_container = $_POST['color-container'];
 $bloc_number = $_POST['bloc-number'];
 

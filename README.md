@@ -4,10 +4,10 @@
 - [ ] Faire une version responsive de la NL
 - [x] Faire des label activant le champ
 - [x] Ajouter les champs
-- [ ] **Ajouter fonctionnalités de suivi google analytics**
+- [ ] Ajouter fonctionnalités de suivi google analytics
 - [x] Rendre le tout un peu plus sexy**
 - [x] L'UTF-8 C'est le bien
-- [ ] **Ajout d'un champ police**
+- [x] Ajout d'un champ police
 
 
 ## PHP
@@ -22,7 +22,7 @@
 ## Javascript
 - [ ] **Faire un bouton "ajouter une ligne"**
 - [ ] **Ajouter les utm de tracking aux url**
-- [ ] Prevoir de pouvoir insérere le texte
+- [ ] Prevoir de pouvoir insérer le texte
 
 
 ##A prevoir

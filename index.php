@@ -11,6 +11,18 @@
         <div class="container">
             <h1>Générateur de newsletter</h1>
             <form method="post" action="generator.php">
+
+                <h2>Général</h2>
+                <label for="color-body">Couleur de fond :</label><input type="color" placeholder="Couleur body" id="color-body" name="color-body"/><br>
+                <label for="police">Police : </label>
+                    <select name="police" id="police">
+                        <option value="arial" selected>Arial</option>
+                        <option value="verdana">Verdana</option>
+                        <option value="courrier">Courier New</option>
+                        <option value="trebuchet">Trebuchet MS</option>
+                        <option value="times">Times New Roman</option>
+                    </select>
+
                 <h2>Header</h2>
                 <label for="url-nl">Url de la newsletter : </label><input type="url" name="url-nl" id="url-nl" placeholder="URL de la newsletter" /><br>
                 Logo / nom de la société<br>
@@ -20,7 +32,7 @@
 
 
                 <h2>Contenu</h2>
-                <label for="color-body">Couleur de fond :</label><input type="color" placeholder="Couleur body" id="color-body" name="color-body"/><br>
+
                 <label for="color-background">Couleur de la newsletter :</label><input type="color" placeholder="Couleur background" id="color-background" name="color-container" /><br>
 
                 <label for="bloc-number">Nombre de bloc de la ligne :</label><input type="number" class="bloc-number" name="bloc-number" id="bloc-number" /><br>
