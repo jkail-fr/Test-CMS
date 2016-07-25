@@ -2,7 +2,7 @@
 ##HTML
 - [ ] Faire une version responsive de la NL
 - [x] Créer la structure de base
-- [ ] Ajouter fonctionnalités de suivi google analytics
+- [x] Ajouter fonctionnalités de suivi google analytics
 - [x] Faire des label activant le champ
 - [x] Ajouter les champs
 - [x] Rendre le tout un peu plus sexy**
@@ -11,12 +11,14 @@
 
 
 ## PHP
-- [x] Récupération des données
+
 - [ ] **Faire le rendu (nombre de blocs et de lignes) sous forme de fonction (ex : fonction($nbbloc,nblignes)**
-- [ ] Permettre l'upload d'image
-- [x] Traitement spécifique pour le bouton "Ajouter une ligne" -> Sera fait en JS, remplacer par le row number
 - [ ] **Des fonctions pour récuperer les données du formulaires**
 - [ ] **Traitement du champ police**
+- [ ] Permettre l'upload d'image
+- [x] Traitement spécifique pour le bouton "Ajouter une ligne" -> Sera fait en JS, remplacer par le row number
+- [x] Récupération des données
+
 
 
 
@@ -31,4 +33,5 @@
 - [ ] Ajout de lien vers les réseaux sociaux (HTML)
 - [ ] NL responsive ou non (PHP)
 - [ ] Prévoir un bouton "copier dans le presse papier pour le code généré(Javascript)
+- [ ] JS : faire une édition live du contenu une fois le squelette généré
 - [ ] Vérifier conformité des données avant envoi (Javascript)
