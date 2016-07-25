@@ -2,10 +2,10 @@
 ##HTML 
 - [x] Créer la structure de base
 - [ ] Faire une version responsive de la NL
-- [ ] **Faire des label activant le champ**
+- [x] Faire des label activant le champ
 - [x] Ajouter les champs
 - [ ] **Ajouter fonctionnalités de suivi google analytics**
-- [ ] **Rendre le tout un peu plus sexy**
+- [x] Rendre le tout un peu plus sexy**
 - [x] L'UTF-8 C'est le bien
 - [ ] **Ajout d'un champ police**
 
@@ -22,6 +22,7 @@
 ## Javascript
 - [ ] **Faire un bouton "ajouter une ligne"**
 - [ ] **Ajouter les utm de tracking aux url**
+- [ ] Prevoir de pouvoir insérere le texte
 
 
 ##A prevoir

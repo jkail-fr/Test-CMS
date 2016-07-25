@@ -1,0 +1,35 @@
+body {
+    width:100%;
+    font-family : Arial, sans-serif;
+}
+
+.container {
+    width:1024px;
+    margin: 0 auto;
+    padding:15px;
+}
+
+h1 {
+    Font size : 2em;
+    color: #DFAC16;
+}
+
+h2 {
+    Font size : 1.6em;
+    color : #F3C350;
+}
+
+h3 {
+    Font size : 1.2em;
+    color: #F3C350;
+}
+
+label {
+    width:20%;
+    display : inline-block;
+    padding:10px;
+}
+
+input[type="text"] {
+    width:65%;
+}
