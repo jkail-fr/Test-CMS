@@ -9,6 +9,9 @@
     </head>
 
     <body>
+    <?php
+        include_once("/includes/includes.php");
+    ?>
         <div class="container">
             <h1>Générateur de newsletter</h1>
             <form method="post" action="generator.php">
@@ -17,10 +20,21 @@
                 <label for="color-body">Couleur de fond :</label><input type="color" placeholder="Couleur body" id="color-body" name="color-body"/><br>
                 <label for="police">Police : </label>
                     <select name="police" id="police">
+                        <?php
+                        foreach($polices as $key => $font) {
+                            ?>
+                        <option value="<?php echo $key; ?>"><?php echo $key; ?></option>
+                        <?php
+                        }
+                        ?>
+                    </select>
+
+                <label for="police">Police : </label>
+                    <select name="police" id="police">
                         <option value="arial" selected>Arial</option>
                         <option value="verdana">Verdana</option>
                         <option value="courrier">Courier New</option>
-                        <option value="trebuchet">Trebuchet MS</option>
+                        <option value="'trebuchet'">Trebuchet MS</option>
                         <option value="times">Times New Roman</option>
                     </select>
                 <hr>
