@@ -1,4 +1,7 @@
 <?php
+include_once("/includes/includes.php");
+
+
 
 /**** Data retrieval ... ca peut servir***/
 
@@ -10,9 +13,10 @@ $police = $_POST['police'];
 
 
 /**Header**/
-$url_newsletter = $_POST['url-nl'];
-$numero_nl = $_POST['numero-nl'];
-$date_nl = $_POST['date-nl'];
+getHead();
+//$url_newsletter = $_POST['url-nl'];
+//$numero_nl = $_POST['numero-nl'];
+//$date_nl = $_POST['date-nl'];
 
 
 /**Contenu**/
@@ -29,7 +33,7 @@ $url_unsuscribe = $_POST['url-unsuscribe'];
 $source_tracking = $_POST['source-tracking'];
 $medium_tracking = $_POST['medium-tracking'];
 $campaign_name = $_POST['campaign-tracking'];
-$campaign_name = $_POST['content_tracking'];
+$content_tracking = $_POST['content-tracking'];
 
 ?>
 
@@ -43,6 +47,9 @@ $campaign_name = $_POST['content_tracking'];
 </head>
 
 <body style="background:<?php echo $color_body; ?>;/*font-family: <?php echo $police; ?>*/">
+<?php
+var_dump($arrayHead);
+?>
 
 <!--Affichage du lien URL -->
   <table  width="800px" style="/*background:<?php echo $color_container; ?>;*/ margin:0 auto; text-align:center;" >
@@ -61,11 +68,11 @@ $campaign_name = $_POST['content_tracking'];
         </td>
 
         <?php
-        if (isset($baseline))
+        if (isset($arrayHead['baseline_nl']))
         {
         ?>
         <td>
-            <p><?php echo $baseline; ?></p>
+            <p><?php echo $arrayHead['baseline_nl']; ?></p>
         </td>
         <?php
         }
