@@ -13,8 +13,8 @@
 ## PHP
 
 - [ ] **Faire le rendu (nombre de blocs et de lignes) sous forme de fonction (ex : fonction($nbbloc,nblignes)**
-- [ ] **Des fonctions pour récuperer les données du formulaires**
-- [ ] **Traitement du champ police**
+- [x] Des fonctions pour récuperer les données du formulaire
+- [x] Traitement du champ police
 - [ ] Permettre l'upload d'image
 - [x] Traitement spécifique pour le bouton "Ajouter une ligne" -> Sera fait en JS, remplacer par le row number
 - [x] Récupération des données
