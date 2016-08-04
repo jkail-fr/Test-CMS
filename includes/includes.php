@@ -18,16 +18,64 @@ $polices = array (
     'times' => '"Times New Roman", "sans-serif"');
 
 /*
+ * Fonction pour récupérer les données du general
+ */
+
+function getGeneral($color,$police)
+{
+    $arrayGeneral = array (
+        'color' => $color,
+        'police_nl' => $police);
+    return $arrayGeneral;
+}
+
+/*
  * Fonction pour récupérer les données du header
  */
 
-function getHead()
+function getHead($url,$numero,$baseline,$date)
 {
     $arrayHead = array (
-    'url_newsletter' => $_POST['url-nl'],
-    'numero_nl' => $_POST['numero-nl'],
-    'baseline_nl' => $_POST['baseline'],
-    'date_nl' => $_POST['date-nl']);
+    'url_newsletter' => $url,
+    'numero_nl' => $numero,
+    'baseline_nl' => $baseline,
+    'date_nl' => $date);
     return $arrayHead;
+}
 
+/*
+ * Fonction pour récupérer les données du contenu
+ */
+function getContent($color,$bloc,$row)
+{
+    $arrayContent = array (
+        'color' => $color,
+        'bloc' => $bloc,
+        'row' => $row);
+    return $arrayContent;
+}
+
+
+/*
+ * Fonction pour récupérer les données du footer
+ */
+function getfooter ($unsuscribe)
+{
+    $arrayFooter = array (
+        'url_unsuscribe' => $unsuscribe);
+    return $arrayFooter;
+}
+
+/*
+ * Fonction pour récupérer les données du tracking
+*/
+
+function getTracking($source,$medium,$campaign,$content)
+{
+    $arrayTracking = array (
+        'source' => $source,
+        'medium' => $medium,
+        'campaign' => $campaign,
+        'content' => $content);
+    return $arrayTracking;
 }
