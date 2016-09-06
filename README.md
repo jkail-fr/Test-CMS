@@ -8,11 +8,13 @@
 - [x] Rendre le tout un peu plus sexy**
 - [x] L'UTF-8 C'est le bien
 - [x] Ajout d'un champ police
+- [x] Ajout d'une interface d'éditon
+- [x] compléter l'interface d'édition avec les champs
 
 
 ## PHP
 
-- [ ] **Faire le rendu (nombre de blocs et de lignes) sous forme de fonction (ex : fonction($nbbloc,nblignes)**
+- [X] **Faire le rendu (nombre de blocs et de lignes) sous forme de fonction (ex : fonction($nbbloc,nblignes)**
 - [x] Des fonctions pour récuperer les données du formulaire
 - [x] Traitement du champ police
 - [ ] Permettre l'upload d'image
@@ -23,15 +25,14 @@
 
 
 ## Javascript
-- [ ] **Faire un bouton "ajouter une ligne"** -> Au final a faire sur la partie generaotor pour ajuster
+- [ ] **Faire un bouton "ajouter une ligne"** -> Au final a faire sur la partie generator pour ajuster
 - [ ] **Ajouter les utm de tracking aux url**
 - [ ] Prevoir de pouvoir insérer le texte
-- [ ] On est des fous, on se prevoit une edition en live
+- [ ] Ajout des boutons de modifications
 
 
 ##A prevoir
 - [ ] Ajout de lien vers les réseaux sociaux (HTML)
 - [ ] NL responsive ou non (PHP)
 - [ ] Prévoir un bouton "copier dans le presse papier pour le code généré(Javascript)
-- [ ] JS : faire une édition live du contenu une fois le squelette généré
 - [ ] Vérifier conformité des données avant envoi (Javascript)
