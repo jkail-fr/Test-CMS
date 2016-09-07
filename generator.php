@@ -36,9 +36,10 @@ $nlTracking = getTracking($_POST['source-tracking'],$_POST['medium-tracking'],$_
     <meta charset="UTF-8">
     <title>Generation de newsletter</title>
 </head>
+<body>
 <div class="row">
     <div id="result" style="float:right;width:65%; border-left:2px solid black;">
-        <body style="background:<?php echo $nlGeneral['color']; ?>;font-family: <?php echo $nlGeneral['police_nl']; ?>">
+        <div id="body" style="background:<?php echo $nlGeneral['color']; ?>;font-family: <?php echo $nlGeneral['police_nl']; ?>">
 
         <!--Affichage du lien URL -->
         <table  width="800px" style="/*background:<?php echo $nlContent['color']; ?>;*/ margin:0 auto; text-align:center;" >
@@ -109,9 +110,11 @@ $nlTracking = getTracking($_POST['source-tracking'],$_POST['medium-tracking'],$_
             </tr>
         </table>
 
-        </body>
+
     </div>
-    <div id="edit" style="width:30%;float:left;background:#DDD; padding:15px;bo">
+</div>
+
+    <div id="edit" style="width:30%;float:left;background:#DDD; padding:15px;">
         <h2>Edition</h2>
         <p>Version en ligne :</p>
         <input type="url" name="url-nl" id="url-nl" placeholder="URL de la newsletter" /><button id="url">Modifier</button>
@@ -119,6 +122,5 @@ $nlTracking = getTracking($_POST['source-tracking'],$_POST['medium-tracking'],$_
         <p>Feature en attente : Telecharger le code</p>
     </div>
 
-
-</div>
+</body>
 </html>

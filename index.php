@@ -10,7 +10,7 @@
 
     <body>
     <?php
-        include_once("/includes/includes.php");
+        include_once("includes/includes.php");
     ?>
         <div class="container">
             <h1>Générateur de newsletter</h1>
@@ -50,8 +50,8 @@
 
                 <label for="color-background">Couleur de la newsletter :</label><input type="color" placeholder="Couleur background" id="color-background" name="color-container" /><br>
 
-                <label for="bloc-number">Nombre de bloc des lignes :</label><input type="number" class="bloc-number" name="bloc-number" id="bloc-number" /><br>
-                <label for="row-number">Nombre lignes :</label><input type="number" class="row-number" name="row-number" id="row-number" /><br>
+                <label for="bloc-number">Nombre de bloc des lignes :</label><input type="number" class="bloc-number" name="bloc-number" id="bloc-number" min="1" max="5" /><br>
+                <label for="row-number">Nombre lignes :</label><input type="number" class="row-number" name="row-number" id="row-number" min="1" /><br>
 
 
                 <hr>

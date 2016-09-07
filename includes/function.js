@@ -13,3 +13,7 @@ var addRow = document.getElementById("addrow");
 addRow.addEventListener("click", function (){
 
 });
+
+/**
+ * Edition live
+ */
