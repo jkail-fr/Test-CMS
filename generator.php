@@ -45,7 +45,7 @@ $nlTracking = getTracking($_POST['source-tracking'],$_POST['medium-tracking'],$_
         <table  width="800px" style="/*background:<?php echo $nlContent['color']; ?>;*/ margin:0 auto; text-align:center;" >
             <tr>
                 <td>
-                    <p>Pour consulter la version en ligne <a href="<?php echo $nlHead['url_newsletter']; ?>"> cliquer ici</a></p>
+                    <p>Pour consulter la version en ligne <a id="url-generate" href="<?php echo $nlHead['url_newsletter']; ?>"> cliquer ici</a></p>
                 </td>
             </tr>
         </table>
@@ -120,6 +120,17 @@ $nlTracking = getTracking($_POST['source-tracking'],$_POST['medium-tracking'],$_
         <input type="url" name="url-nl" id="url-nl" placeholder="URL de la newsletter" /><button id="url">Modifier</button>
         <hr>
         <p>Feature en attente : Telecharger le code</p>
+        <script>
+            function edition() {
+                console.log("clic !");
+                var textQuiVaBien = document.getElementById('url').value
+                console.log(textQuiVaBien);
+                document.getElementById("url-generate").href = 'coucou';
+            }
+
+            var urlElt = document.getElementById("url");
+            urlElt.addEventListener("click", edition);
+        </script>
     </div>
 
 </body>
