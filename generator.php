@@ -125,7 +125,7 @@ $nlTracking = getTracking($_POST['source-tracking'],$_POST['medium-tracking'],$_
                 console.log("clic !");
                 var textQuiVaBien = document.getElementById('url-nl').value;
                 console.log(document.getElementById('url-nl').value);
-                document.getElementById("url-generate").href = 'coucou';
+                document.getElementById("url-generate").href = textQuiVaBien;
             }
 
             var urlElt = document.getElementById("url");
