@@ -1,5 +1,5 @@
 <?php
-require_once("/includes/includes.php");
+require_once("includes/includes.php");
 
 
 
@@ -123,8 +123,8 @@ $nlTracking = getTracking($_POST['source-tracking'],$_POST['medium-tracking'],$_
         <script>
             function edition() {
                 console.log("clic !");
-                var textQuiVaBien = document.getElementById('url').value;
-                console.log(document.getElementById('url').value);
+                var textQuiVaBien = document.getElementById('url-nl').value;
+                console.log(document.getElementById('url-nl').value);
                 document.getElementById("url-generate").href = 'coucou';
             }
 
