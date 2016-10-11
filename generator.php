@@ -54,7 +54,7 @@ $nlTracking = getTracking($_POST['source-tracking'],$_POST['medium-tracking'],$_
         <table width="800px" style="background:<?php echo $nlContent['color']; ?>;  margin:0 auto;" >
             <tr>
                 <td>
-                    <p><img src="<?php /*echo $nl_logo;*/ ?>" alt="logo"/></p>
+                    <p><img id="nl-logo" src="<?php /*echo $nl_logo;*/ ?>" alt="logo"/></p>
                 </td>
 
                 <?php
@@ -119,17 +119,41 @@ $nlTracking = getTracking($_POST['source-tracking'],$_POST['medium-tracking'],$_
         <p>Version en ligne :</p>
         <input type="url" name="url-nl" id="url-nl" placeholder="URL de la newsletter" /><button id="url">Modifier</button>
         <hr>
+        <input type="url" name="logo-nl" id="logo-nl" placeholder="URL du logo" /><button id="logo">Modifier</button>
+        <hr>
+        <input type="text" name="baseline-nl" id="baseline-nl" placeholder="Baseline" /><button id="baseline">Modifier</button>
+        <hr>
+        <input type="text" name="numero-nl" id="numero-nl" placeholder="Numéro de la newsletter" /><button id="numero">Modifier</button>
+        <hr>
+        <input type="text" name="date-nl" id="date-nl" placeholder="Date" /><button id="date">Modifier</button>
+        <hr>
+        <input type="url" name="unsuscribe-nl" id="unsuscribe-nl" placeholder="URL de désinscription" /><button id="unsuscribe">Modifier</button>
+        <hr>
+
         <p>Feature en attente : Telecharger le code</p>
         <script>
-            function edition() {
-                console.log("clic !");
+
+            function editionUrl() {
+                //console.log("clic !");
                 var textQuiVaBien = document.getElementById('url-nl').value;
                 console.log(document.getElementById('url-nl').value);
                 document.getElementById("url-generate").href = textQuiVaBien;
             }
 
+            function edition(theId, destination, attribute) /** id de la value a recupérer, cible ou injecter le contenu, attribut html a modifier **/ {
+                var textQuiVaBien = document.getElementById(theId).value;
+                console.log(document.getElementById(theId).value);
+                document.getElementById(destination).attribute = textQuiVaBien;
+            }
+
+            /****Appel de la fonction editionURL ****/
             var urlElt = document.getElementById("url");
-            urlElt.addEventListener("click", edition);
+            urlElt.addEventListener("click", editionUrl);
+
+            /****Appel de la fonction edition ****/
+            var logoElt = document.getElementById("logo");
+            logoElt.addEventListener("click", edition('logo-nl','nl-logo','src'));
+
         </script>
     </div>
 
