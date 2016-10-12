@@ -143,7 +143,7 @@ $nlTracking = getTracking($_POST['source-tracking'],$_POST['medium-tracking'],$_
             function edition(theId, destination, attribute) /** id de la value a recupérer, cible ou injecter le contenu, attribut html a modifier **/ {
                 var textQuiVaBien = document.getElementById(theId).value;
                 console.log(document.getElementById(theId).value);
-                document.getElementById(destination).attribute = textQuiVaBien;
+                document.getElementById(destination).setAttribute(attribute,textQuiVaBien);
             }
 
             /****Appel de la fonction editionURL ****/
@@ -152,7 +152,9 @@ $nlTracking = getTracking($_POST['source-tracking'],$_POST['medium-tracking'],$_
 
             /****Appel de la fonction edition ****/
             var logoElt = document.getElementById("logo");
-            logoElt.addEventListener("click", edition('logo-nl','nl-logo','src'));
+            logoElt.addEventListener("click", function(){
+                edition("logo-nl","nl-logo","src");
+            });
 
         </script>
     </div>
