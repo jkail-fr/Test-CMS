@@ -29,6 +29,7 @@
 - [ ] **Ajouter les utm de tracking aux url**
 - [ ] Prevoir de pouvoir insérer le texte
 - [ ] Ajout des boutons de modifications
+- [ ] Mettre le code dans une page script, a part
 
 
 ##A prevoir
