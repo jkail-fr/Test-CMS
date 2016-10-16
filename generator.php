@@ -133,12 +133,6 @@ $nlTracking = getTracking($_POST['source-tracking'],$_POST['medium-tracking'],$_
         <p>Feature en attente : Telecharger le code</p>
         <script>
 
-            function editionUrl() {
-                //console.log("clic !");
-                var textQuiVaBien = document.getElementById('url-nl').value;
-                console.log(document.getElementById('url-nl').value);
-                document.getElementById("url-generate").href = textQuiVaBien;
-            }
 
             function edition(theId, destination, attribute) /** id de la value a recupérer, cible ou injecter le contenu, attribut html a modifier **/ {
                 var textQuiVaBien = document.getElementById(theId).value;
@@ -146,14 +140,17 @@ $nlTracking = getTracking($_POST['source-tracking'],$_POST['medium-tracking'],$_
                 document.getElementById(destination).setAttribute(attribute,textQuiVaBien);
             }
 
-            /****Appel de la fonction editionURL ****/
-            var urlElt = document.getElementById("url");
-            urlElt.addEventListener("click", editionUrl);
+
 
             /****Appel de la fonction edition ****/
             var logoElt = document.getElementById("logo");
             logoElt.addEventListener("click", function(){
                 edition("logo-nl","nl-logo","src");
+            });
+
+            var logoElt = document.getElementById("url");
+            logoElt.addEventListener("click", function(){
+                edition("url-nl","url-generate","href");
             });
 
         </script>
