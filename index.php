@@ -33,7 +33,7 @@
                 <hr>
                 <h2>Header</h2>
                 <label for="url-nl">Url de la newsletter : </label><input type="url" name="url-nl" id="url-nl" placeholder="URL de la newsletter" /><br>
-                Logo / nom de la société<br>
+                <!--Logo / nom de la société<br>-->
                 <label for="baseline">Baseline :</label><input type="text" name="baseline" id="baseline" placeholder="Insérez votre baseline" /><br>
                 <label for="">Numéro :</label><input type="text" name="numero-nl" id="numero-nl" placeholder="Newsletter numéro ?" /><br>
                 <label for="date-nl">Date :</label><input type="text" name="date-nl" id="date-nl" placeholder="Date (exemple Mois de Mars)" /><br>
