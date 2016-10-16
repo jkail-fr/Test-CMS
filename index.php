@@ -29,14 +29,7 @@
                         ?>
                     </select>
 
-                <label for="police">Police : </label>
-                    <select name="police" id="police">
-                        <option value="arial" selected>Arial</option>
-                        <option value="verdana">Verdana</option>
-                        <option value="courrier">Courier New</option>
-                        <option value="'trebuchet'">Trebuchet MS</option>
-                        <option value="times">Times New Roman</option>
-                    </select>
+
                 <hr>
                 <h2>Header</h2>
                 <label for="url-nl">Url de la newsletter : </label><input type="url" name="url-nl" id="url-nl" placeholder="URL de la newsletter" /><br>
