@@ -13,13 +13,12 @@
 
 
 ## PHP
-
 - [X] **Faire le rendu (nombre de blocs et de lignes) sous forme de fonction (ex : fonction($nbbloc,nblignes)**
 - [x] Des fonctions pour récuperer les données du formulaire
 - [x] Traitement du champ police
-- [ ] Permettre l'upload d'image
 - [x] Traitement spécifique pour le bouton "Ajouter une ligne" -> Sera fait en JS, remplacer par le row number
 - [x] Récupération des données
+- [ ] Modifier le script de génération des blocs pour ajouter un id aux titres et blocs
 
 
 
@@ -28,8 +27,8 @@
 - [ ] **Faire un bouton "ajouter une ligne"** -> Au final a faire sur la partie generator pour ajuster
 - [ ] **Ajouter les utm de tracking aux url**
 - [ ] Prevoir de pouvoir insérer le texte
-- [ ] Ajout des boutons de modifications
-- [ ] Mettre le code dans une page script, a part
+- [x] Ajout des boutons de modifications
+- [x] Mettre le code dans une page script, a part
 
 
 ##A prevoir

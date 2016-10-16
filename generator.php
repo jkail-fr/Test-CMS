@@ -45,7 +45,7 @@ $nlTracking = getTracking($_POST['source-tracking'],$_POST['medium-tracking'],$_
         <table  width="800px" style="/*background:<?php echo $nlContent['color']; ?>;*/ margin:0 auto; text-align:center;" >
             <tr>
                 <td>
-                    <p>Pour consulter la version en ligne <a id="url-generate" href="<?php echo $nlHead['url_newsletter']; ?>"> cliquer ici</a></p>
+                    <p>Pour consulter la version en ligne <a id="url-generated" href="<?php echo $nlHead['url_newsletter']; ?>"> cliquer ici</a></p>
                 </td>
             </tr>
         </table>
@@ -62,14 +62,14 @@ $nlTracking = getTracking($_POST['source-tracking'],$_POST['medium-tracking'],$_
                 {
                     ?>
                     <td>
-                        <p><?php echo $nlHead['baseline_nl']; ?></p>
+                        <p id="baseline-generated"><?php echo $nlHead['baseline_nl']; ?></p>
                     </td>
                     <?php
                 }
                 ?>
 
                 <td align="right">
-                    <p>n°<?php echo $nlHead['numero_nl']; ?><br><?php echo $nlHead['date_nl']; ?></p>
+                    <p><span id="numero-generated">n°<?php echo $nlHead['numero_nl']; ?></span><br><span id="date-generated"><?php echo $nlHead['date_nl']; ?></span></p>
                 </td>
             </tr>
         </table>
@@ -106,7 +106,7 @@ $nlTracking = getTracking($_POST['source-tracking'],$_POST['medium-tracking'],$_
 
         <table  width="800px" style="/*background:<?php echo $nlContent['color']; ?>;*/  margin:0 auto; text-align:center;" >
             <tr>
-                <td><p>Pour vous désinscrire <a href="<?php echo $nlFooter['url_unsuscribe']; ?>">cliquer ici</a></p></td>
+                <td><p>Pour vous désinscrire <a id="unsuscribe-generated" href="<?php echo $nlFooter['url_unsuscribe']; ?>">cliquer ici</a></p></td>
             </tr>
         </table>
 
@@ -116,7 +116,7 @@ $nlTracking = getTracking($_POST['source-tracking'],$_POST['medium-tracking'],$_
 
     <div id="edit" style="width:30%;float:left;background:#DDD; padding:15px;">
         <h2>Edition</h2>
-        <p>Version en ligne :</p>
+        <h3>Version en ligne :</h3>
         <input type="url" name="url-nl" id="url-nl" placeholder="URL de la newsletter" /><button id="url">Modifier</button>
         <hr>
         <input type="url" name="logo-nl" id="logo-nl" placeholder="URL du logo" /><button id="logo">Modifier</button>
@@ -129,30 +129,19 @@ $nlTracking = getTracking($_POST['source-tracking'],$_POST['medium-tracking'],$_
         <hr>
         <input type="url" name="unsuscribe-nl" id="unsuscribe-nl" placeholder="URL de désinscription" /><button id="unsuscribe">Modifier</button>
         <hr>
-
+        <h3>Tracking Google analytics</h3>
+        <label for="source-tracking">Nom de la source :</label>
+        <input type="text" placeholder="Newsletter" name="source-tracking" id="source-tracking" /><br>
+        <label for="medium-tracking">Nom du medium :</label>
+        <input type="text" placeholder="ex : email" name="medium-tracking" id="medium-tracking" /><br>
+        <label for="campaign-tracking">Nom de la campagne :</label>
+        <input type="text" placeholder="Nom de la campagne" name="campaign-tracking" id="campaign-tracking" /><br>
+        <label for="content-tracking">Content :</label>
+        <input type="text" placeholder="Contenu" name="content-tracking" id="content-tracking" /><br>
+        <button id="urlRewritting">Changer les URLs</button>
+        <hr>
         <p>Feature en attente : Telecharger le code</p>
-        <script>
-
-
-            function edition(theId, destination, attribute) /** id de la value a recupérer, cible ou injecter le contenu, attribut html a modifier **/ {
-                var textQuiVaBien = document.getElementById(theId).value;
-                console.log(document.getElementById(theId).value);
-                document.getElementById(destination).setAttribute(attribute,textQuiVaBien);
-            }
-
-
-
-            /****Appel de la fonction edition ****/
-            var logoElt = document.getElementById("logo");
-            logoElt.addEventListener("click", function(){
-                edition("logo-nl","nl-logo","src");
-            });
-
-            var logoElt = document.getElementById("url");
-            logoElt.addEventListener("click", function(){
-                edition("url-nl","url-generate","href");
-            });
-
+        <script src="includes/function.js">
         </script>
     </div>
 

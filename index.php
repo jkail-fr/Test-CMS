@@ -51,16 +51,7 @@
                 <h2>Footer</h2>
                 <label for="url-unsuscribe">Url de désinscription : </label><input type="url" name="url-unsuscribe" id="url-unsuscribe" placeholder="URL de désinscription" /><br>
 
-                <hr>
-                <h2>Tracking : Générateur de lien google</h2>
-                <label for="source-tracking">Nom de la source :</label>
-                <input type="text" placeholder="Source" name="source-tracking" id="source-tracking" /><br>
-                <label for="medium-tracking">Nom de la campagne :</label>
-                <input type="text" placeholder="Medium" name="medium-tracking" id="medium-tracking" /><br>
-                <label for="campaign-tracking">Nom de la campagne :</label>
-                <input type="text" placeholder="Campagne" name="campaign-tracking" id="campaign-tracking" /><br>
-                <label for="content-tracking">Nom de la campagne :</label>
-                <input type="text" placeholder="Contenu" name="content-tracking" id="content-tracking" /><br>
+
                 <hr>
                 <input type="submit" value="Balance la purée Marcel !" />
 
