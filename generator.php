@@ -23,8 +23,6 @@ $row_number = $_POST['row-number'];*/
 $nlFooter = getFooter($_POST['url-unsuscribe']);
 
 
-/**Tracking**/
-$nlTracking = getTracking($_POST['source-tracking'],$_POST['medium-tracking'],$_POST['campaign-tracking'],$_POST['content-tracking']);
 
 ?>
 
@@ -80,6 +78,7 @@ $nlTracking = getTracking($_POST['source-tracking'],$_POST['medium-tracking'],$_
         <table width="800px" style="background:<?php echo $nlContent['color']; ?>;  margin:0 auto;" >
             <?php
             $ii = 0;
+            $bloc_id=1;
             while ($ii < $nlContent['row']) {
                 $ii++;
                 ?>
@@ -90,8 +89,9 @@ $nlTracking = getTracking($_POST['source-tracking'],$_POST['medium-tracking'],$_
                     while ($i != $nlContent['bloc'] )
                     {
                         $numbloc = $i+1;
-                        echo '<td> <h3>Bloc n°'.$numbloc.'</h3>Cognitis enim pilatorum caesorumque funeribus nemo deinde ad has stationes appulit navem, sed ut Scironis praerupta letalia declinantes litoribus Cypriis contigui navigabant, quae Isauriae scopulis sunt controversa.</td>';
+                        echo '<td> <h3 id="titre'.$bloc_id.'">Bloc n°'.$bloc_id.'</h3><p id="content'.$bloc_id.'">Cognitis enim pilatorum caesorumque funeribus nemo deinde ad has stationes appulit navem, sed ut Scironis praerupta letalia declinantes litoribus Cypriis contigui navigabant, quae Isauriae scopulis sunt controversa.</p></td>';
                         $i++;
+                        $bloc_id++;
                     }
                     ?>
 
@@ -128,6 +128,13 @@ $nlTracking = getTracking($_POST['source-tracking'],$_POST['medium-tracking'],$_
         <input type="text" name="date-nl" id="date-nl" placeholder="Date" /><button id="date">Modifier</button>
         <hr>
         <input type="url" name="unsuscribe-nl" id="unsuscribe-nl" placeholder="URL de désinscription" /><button id="unsuscribe">Modifier</button>
+        <hr>
+        <h3>Edition des blocs</h3>
+        <label for="blocnumber">Choix du bloc : </label><input type="number" min="1" max="<?php echo $bloc_id; ?>" id="blocnumber" placeholder="numéro du bloc" /><br>
+        <label for="bloctitle">Titre bloc : </label><input type="text" placeholder="Titre du bloc" id="bloctitle" /><br>
+        <label for="bloccontent">Choix du bloc : </label><input type="text" id="bloccontent" placeholder="Contenu du bloc" /><br>
+        <button id="blocmodify">Modifier</button>
+
         <hr>
         <h3>Tracking Google analytics</h3>
         <label for="source-tracking">Nom de la source :</label>
