@@ -132,7 +132,7 @@ $nlFooter = getFooter($_POST['url-unsuscribe']);
         <h3>Edition des blocs</h3>
         <label for="blocnumber">Choix du bloc : </label><input type="number" min="1" max="<?php echo $bloc_id-1; ?>" id="blocnumber" placeholder="numéro du bloc" /><br>
         <label for="bloctitle">Titre bloc : </label><input type="text" placeholder="Titre du bloc" id="bloctitle" /><br>
-        <label for="bloccontent">texte du bloc : </label><input type="text" id="bloccontent" placeholder="Contenu du bloc" /><br>
+        <label for="bloccontent">texte du bloc : </label><textarea id="bloccontent" rows="4" cols="50">Cognitis enim pilatorum caesorumque funeribus nemo deinde ad has stationes appulit navem, sed ut Scironis praerupta letalia declinantes litoribus Cypriis contigui navigabant, quae Isauriae scopulis sunt controversa.</textarea><br>
         <button id="blocmodify">Modifier</button>
 
         <hr>
