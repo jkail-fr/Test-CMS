@@ -32,7 +32,7 @@
 
 
 ##A prevoir
-- [ ] Ajout de lien vers les réseaux sociaux (HTML)
+- [ ] Ajout de lien vers les réseaux sociaux (HTML) 
 - [ ] NL responsive ou non (PHP)
 - [ ] Prévoir un bouton "copier dans le presse papier pour le code généré(Javascript)
 - [ ] Vérifier conformité des données avant envoi (Javascript)
